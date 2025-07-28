@@ -9,5 +9,5 @@ def main():
     result = perform_operation(num1, num2, operation)
     print(f"Result: {result}")
 
-if name == "main":
+if __name__ == "__main__":
     main()
