@@ -1,9 +1,13 @@
+
+
 def display_menu():
     print("\nShopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
     print("4. Exit")
+
+
 
 def main():
     shopping_list = []
@@ -26,8 +30,8 @@ def main():
         elif choice == '3':
             if shopping_list:
                 print("Shopping List:")
-                for idx, item in enumerate(shopping_list, start=1):
-                    print(f"{idx}. {item}")
+                for i, item in enumerate(shopping_list, start=1):
+                    print(f"{i}. {item}")
             else:
                 print("Your shopping list is empty.")
         elif choice == '4':
@@ -35,6 +39,3 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
-
-if __name__ == "__main__":
-    main()
